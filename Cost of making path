@@ -1,0 +1,19 @@
+#to estimate cost of laying synthetic track along a park
+#inputs required-length breadth width of track cost of track per unit area
+
+#Inputting the values
+l=float(input("Enter the length of the park(m)-"))
+b=float(input("Enter the breadth of the park(m)-"))
+wt=float(input("Enter the width of the track around the park(m)-"))
+#finding the values of the tracl
+lt=(l+wt+wt)
+bt=(b+wt+wt)
+arp=(l*b)
+arpath=((lt*bt)-arp)
+#Finding cost
+cost=float(input("Enter the cost of making the path per sq m-"))
+tcost=(arpath*cost)
+#printing the results
+print("The area of the park is ",arp)
+print("The area of the path is ",arpath)
+print("The total cost of making the path is ",tcost)
